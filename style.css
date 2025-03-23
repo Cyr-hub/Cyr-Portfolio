@@ -5,8 +5,50 @@ body {
     text-align: center;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
+/*Settings for links*/
+a{
+    text-decoration: none;
+    color: #fff;
 }
+/*End*/
+
+/*Header*/
+.header {
+    display: flex;
+    justify-content: flex-end; 
+    padding: 20px;
+    background-color: #333;
+}
+div.navi{
+    margin-right: 50px;
+}
+.navi {
+    display: flex;
+    gap: 20px; 
+}
+
+.navi a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+/* Hover underline effect */
+.navi a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px; /* Underline thickness */
+    background: #ce4f20;
+    scale: 0 1;
+    transition: scale 0.3s ease-in-out;
+}
+
+.navi a:hover::before {
+    scale: 1;
+}
+  
