@@ -5,20 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    
 </head>
 <body>
 
-<nav class="header">
-    <div class="navi">
-        <a href="#">Home</a>
-        <a href="#">Resume</a>
-        <a href="#">Contact</a>
-        <a href="#">Project</a>
-</div>
+    <nav class="header">
+        <a href="#"><img id="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAACUCAMAAAD/A6aTAAAAA1BMVEUAAP+KeNJXAAAAM0lEQVR4nO3BgQAAAADDoPlTX+EAVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAZ3MMAAE2l9mIAAAAAElFTkSuQmCC"></a>
+    
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    
+        <div class="navi">
+            <a href="#">Home</a>
+            <a href="#">Resume</a>
+            <a href="#">Contact</a>
+            <a href="#">Project</a>
+        </div>
+    </nav>
 </nav>
     <section>
         <h2>About Me</h2>
         <p>I'm a web developer passionate about creating amazing websites.</p>
     </section>
+
+<script src="script.js"></script>
 </body>
 </html>
+

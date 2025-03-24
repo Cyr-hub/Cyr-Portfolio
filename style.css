@@ -15,12 +15,13 @@ a{
 /*Header*/
 .header {
     display: flex;
-    justify-content: flex-end; 
-    padding: 20px;
+    justify-content: space-between; 
+    padding: 15px;
     background-color: #333;
+    align-items: center;
 }
 div.navi{
-    margin-right: 50px;
+    margin-right: 20px;
 }
 .navi {
     display: flex;
@@ -51,4 +52,42 @@ div.navi{
 .navi a:hover::before {
     scale: 1;
 }
-  
+
+#logo {
+    height: 20px; /* Adjust as needed */
+}
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle div {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .navi {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #333;
+        padding: 10px;
+        border-radius: 5px;
+        width: 150px;
+    }
+
+    .navi.active {
+        display: flex;
+    }
+}
