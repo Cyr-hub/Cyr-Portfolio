@@ -53,9 +53,7 @@ div.navi{
     scale: 1;
 }
 
-#logo {
-    height: 20px; /* Adjust as needed */
-}
+
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -69,7 +67,7 @@ div.navi{
     margin: 5px 0;
 }
 
-/* Responsive Styles */
+/* Responsive Styles*/
 @media (max-width: 768px) {
     .menu-toggle {
         display: flex;
@@ -89,5 +87,22 @@ div.navi{
 
     .navi.active {
         display: flex;
+        font-weight: bold;
     }
 }
+
+.headername{
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.landingP {
+    display: grid;
+    grid-template-columns: 40% 50%;
+    height: 100vh; 
+}
+.left{
+   background-color: #ce4f20;
+}
+
+
