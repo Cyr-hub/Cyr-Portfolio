@@ -139,26 +139,33 @@ div.navi{
 .profile-image img {
     width: 70%;
     border-radius: 10px;
+}
+    .greeting {
+        font-size: 40px;
+        font-family: 'Georgia', serif;
+        font-weight: 600;
+        color: white;
+    }
     
-}
-h1 {
-    font-size: 40px;
-    font-weight: bold;
-    color: #222;
-}
-
-h2 {
-    font-size: 28px;
-    font-weight: 600;
-    color: #444;
-}
-
-.description {
-    font-size: 18px;
-    color: #666;
-    line-height: 1.6;
-    max-width: 500px;
-}
+    .greeting .name {
+        color: #ff7700;
+    }
+    
+    .role {
+        font-size: 32px;
+        font-family: 'Georgia', serif;
+        font-weight: bold;
+        color: white;
+        margin-top: 10px;
+    }
+    
+    .description {
+        font-size: 16px;
+        color: #ccc;
+        line-height: 1.8;
+        max-width: 500px;
+        margin-top: 20px;
+    }
 
 /* Social Icons */
 .social-icons {
